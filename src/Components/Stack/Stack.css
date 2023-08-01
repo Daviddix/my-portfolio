@@ -1,0 +1,34 @@
+.stack{
+    background-color: var(--techStackBgColor);
+    padding: 4rem 0;
+}
+
+.stack-inner{
+    width:90vw;
+    max-width: var(--laptop);
+    margin: auto;
+    
+}
+
+.stack-inner > h1{
+    font-family: clashGrotesk;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.stack-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+    .stack-container{
+        width: 100%;
+    }
+}

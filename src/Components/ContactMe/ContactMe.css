@@ -1,0 +1,69 @@
+.contact{
+    background-image: linear-gradient(to bottom right, var(--contactBgGradientDark), var(--contactBgGradientLight));
+    padding: 4rem 0rem;
+}
+
+.contact-inner{
+    max-width: 90vw;
+    margin: auto;
+}
+
+.contact-inner h1{
+    font-family: clashGrotesk;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    color: white;
+}
+
+.contact-container > div{
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+
+.contact-container > div > div{
+    background-color: red;
+    width: 5rem;
+    height: 5rem;
+    max-width: fit-content;
+    padding: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem 0 0;
+}
+
+.contact-container > div a{
+    color: white;
+    font-size: 2rem;
+    font-family: clashGrotesk;
+    font-weight: 600;
+    display: flex;
+}
+
+.email .icon-container{
+    background-color: var(--emailBgColor);
+}
+
+.twitter .icon-container{
+    background-color: var(--twitterBgColor);
+}
+
+.github .icon-container{
+    background-color: var(--githubBgColor);
+    padding-bottom: 2.5rem;
+}
+
+.contact-inner .attr{
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: clashGrotesk;
+    color: var(--copyriteTextColor);
+    margin: 3rem 0rem;
+    opacity: .5;
+}

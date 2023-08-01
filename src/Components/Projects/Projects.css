@@ -1,0 +1,30 @@
+.projects{
+    margin: 2rem 0;
+}
+
+.projects-inner{
+    width: 90vw;
+    max-width: var(--laptop);
+    margin: auto;
+}
+
+.projects-inner > h1{
+    font-family: clashGrotesk;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.projects-inner .projects-container{
+    width: 100%;
+}
+
+.projects .view-more{
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 1rem 1.2rem; 
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+    margin: auto;
+}

@@ -1,0 +1,31 @@
+.single-stack{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-stack img{
+    width: 5rem;
+}
+
+.single-stack > p{
+    font-size: 1.6rem;
+    font-family: clashGrotesk;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: var(--techStackTextColor);
+    margin: .4rem 0 0 0;
+}
+
+@media screen and (min-width:600px) {
+    .single-stack{
+        width:11rem;
+    }
+
+    .single-stack p{
+        font-size: 1.8rem;
+        margin: .8rem 0 0 0;
+    }
+}

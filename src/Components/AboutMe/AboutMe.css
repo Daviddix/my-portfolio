@@ -1,0 +1,68 @@
+.about{
+    border-top: 2px solid black;
+    margin: 5rem 0;
+    padding: 5rem 0rem;
+}
+
+.about-me-inner {
+    width:90vw;
+    max-width: var(--laptop);
+    margin: auto;
+}
+
+.about-me-inner h1{
+    font-family: clashGrotesk;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.about-me-container{
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.about-me-container > img{
+    width:100%;
+    margin: 2rem 0rem;
+}
+
+.about-me-text-content > p{
+    font-size: 1.6rem;
+    font-family: gotham;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    margin: 0 0 2rem 0;
+    color: var(--aboutMeTextColor);
+}
+
+.about-me-text-content button{
+    background-color: var(--buttonBgPrimaryColor);
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: 1rem 1.5rem;
+    color:white;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    box-shadow: 4px 3px 0rem 0rem black;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1100px) {
+    .about-me-container > img{
+        margin: 2rem 6rem 0 0;
+    }
+
+    .about-me-container{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .about-me-text-content > p{
+        max-width: 80%;
+    }
+}

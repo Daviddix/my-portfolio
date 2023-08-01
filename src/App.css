@@ -1,0 +1,76 @@
+:root{
+--blueGradientLight: #457AD4;
+
+--blueGradientDark: #254375;
+
+--buttonBgPrimaryColor: #457AD4;
+--buttonBgPrimaryColorT: #4579d462;
+
+--buttonSecondaryBgColor: #5494FF;
+
+--techStackBgColor: #F4F8FF;
+
+--techStackTextColor: #1E1E1E;
+
+--sectionHeadingTextColor: #171717;
+
+--projectHeadingTextColor: #000000;
+
+--projectDescriptionText: #151515;
+
+--languageTagBgColor: #465A7B;
+
+--sourceCodeButtonColor: #353535;
+
+--sliderBgColor: #457AD4;
+
+--viewMoreBorderColor: #262626;
+
+--aboutMeTextColor: #151515;
+
+--emailBgColor: #41BE67;
+
+--twitterBgColor: #457AD4;
+
+--githubBgColor: #222222;
+
+--contactBgGradientDark: #000000;
+
+--contactBgGradientLight: #1C1C1C;
+
+--copyriteTextColor: #DDDDDD;
+
+--tablet: 600px;
+
+--laptop: 1300px;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: clashGrotesk;
+    src: url("./assets/fonts/ClashGrotesk-Variable.ttf");
+}
+
+@font-face {
+    font-family: gotham;
+    src: url("./assets/fonts/gotham/Gotham-Book.ttf");
+}
+
+@font-face {
+    font-family: gothamMedium;
+    src: url("./assets/fonts/gotham/Gotham-Medium.otf");
+}
+
+button{
+    font-family: gothamMedium;
+    cursor: pointer;
+}

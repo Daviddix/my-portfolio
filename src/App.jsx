@@ -3,6 +3,7 @@ import ContactMe from "./Components/ContactMe/ContactMe.jsx"
 import Hero from "./Components/Hero/Hero.jsx"
 import Projects from "./Components/Projects/Projects.jsx"
 import Stack from "./Components/Stack/Stack.jsx"
+import "./App.css"
 function App() {
 
   return (

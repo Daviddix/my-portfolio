@@ -6,6 +6,7 @@ import tailwind from "../../assets/icons/tailwindcss-plain.svg"
 import react from "../../assets/icons/react-original.svg"
 import invision from "../../assets/icons/invision-icon.svg"
 import SingleStack from "../SingleStack/SingleStack"
+import "./Stack.css"
 
 function Stack() {
     const [stack, setStack] = useState([{name : "HTML", icon : html}, {name : "CSS", icon : css}, {name : "JavaScript", icon : js}, {name: "Tailwind CSS", icon : tailwind}, {name : "ReactJS", icon : react}, {name: "Invision Studio", icon : invision}])
@@ -14,7 +15,7 @@ function Stack() {
         return <SingleStack icon={icon} name ={name} />
     })
   return (
-    <section>
+    <section className="stack">
         <div className="stack-inner">
               <h1>TECH STACK</h1>
 

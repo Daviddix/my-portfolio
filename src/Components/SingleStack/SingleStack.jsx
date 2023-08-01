@@ -1,8 +1,8 @@
-import React from 'react'
+import "./SingleStack.css"
 
 function SingleStack({icon, name}) {
   return (
-    <div>
+    <div className="single-stack">
         <img src={icon} alt={`icon of ${name}`} />
         <p>{name}</p>
     </div>

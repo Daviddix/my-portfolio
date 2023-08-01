@@ -1,12 +1,13 @@
 import email from "../../assets/icons/email-icon.svg" 
-import arrow from "../../assets/icons/view-more-arrow.svg"
+import arrow from "../../assets/icons/light-arrow.svg"
 import twitter from "../../assets/icons/twitter-icon.svg"
 import github from "../../assets/icons/github-2-icon.svg"
+import "./ContactMe.css"
 
 function ContactMe() {
   return (
-    <section>
-        <div className="contact-me-inner">
+    <section className="contact">
+        <div className="contact-inner">
             <h1>CONTACT ME</h1>
 
             <div className="contact-container">
@@ -36,7 +37,7 @@ function ContactMe() {
                     </div>
 
                     <a href="" className="github-link">
-                        Send me an github <img src={arrow} alt="" />
+                        Check out my Github<img src={arrow} alt="" />
                     </a>
                 </div>
             </div>
