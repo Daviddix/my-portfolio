@@ -3,23 +3,23 @@ import SingleProject from "../SingleProject/SingleProject"
 import "./Projects.css"
 
 // images 
-import remindrOne from "../../assets/images/remindr/15shots_so.jpg"
-import remindrTwo from "../../assets/images/remindr/120shots_so.jpg"
-import remindrThree from "../../assets/images/remindr/471shots_so.jpg"
+import remindrOne from "../../assets/images/remindr/15shots_so-min.jpg"
+import remindrTwo from "../../assets/images/remindr/120shots_so-min.jpg"
+import remindrThree from "../../assets/images/remindr/471shots_so-min.jpg"
 
 //bulk downloader
-import bulkOne from "../../assets/images/bulk/168shots_so.jpg"
-import bulkTwo from "../../assets/images/bulk/621shots_so.jpg"
-import bulkThree from "../../assets/images/bulk/27shots_so.jpg"
+import bulkOne from "../../assets/images/bulk/168shots_so-min.jpg"
+import bulkTwo from "../../assets/images/bulk/621shots_so-min.jpg"
+import bulkThree from "../../assets/images/bulk/27shots_so-min.jpg"
 
 //mathivities
-import mathOne from "../../assets/images/mathivities/154shots_so.jpg"
-import mathTwo from "../../assets/images/mathivities/441shots_so.jpg"
-import mathThree from "../../assets/images/mathivities/762shots_so.jpg"
+import mathOne from "../../assets/images/mathivities/154shots_so-min.jpg"
+import mathTwo from "../../assets/images/mathivities/441shots_so-min.jpg"
+import mathThree from "../../assets/images/mathivities/762shots_so-min.jpg"
 
 //weather
-import weatherOne from "../../assets/images/weather/687shots_so.jpg"
-import weatherTwo from "../../assets/images/weather/570shots_so.jpg"
+import weatherOne from "../../assets/images/weather/687shots_so-min.jpg"
+import weatherTwo from "../../assets/images/weather/570shots_so-min.jpg"
 import weatherThree from "../../assets/images/weather/56shots_so.png"
 
 import arrow from "../../assets/icons/view-more-arrow.svg"
