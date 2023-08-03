@@ -17,7 +17,7 @@ function Stack() {
   return (
     <section className="stack">
         <div className="stack-inner">
-              <h1>TECH STACK</h1>
+              <h1 id="stack">TECH STACK</h1>
 
         <div className="stack-container">
         {mappedStack}

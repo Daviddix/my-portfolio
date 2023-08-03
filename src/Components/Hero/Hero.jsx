@@ -3,29 +3,60 @@ import x from "../../assets/icons/x-icon.svg"
 import hamburger from "../../assets/icons/hamburger-icon.svg"
 import pattern from "../../assets/images/background-pattern.png"
 import "./Hero.css"
+import { useState } from "react"
+
 
 function Hero() {
+  const [navIsOpened, setNavIsOpened] = useState(false)
   return (
-    <section class="hero">
+    <section className="hero">
 
       <header>
         <a href="#" className="logo">
             <img src={logo} alt="website logo" />
         </a>
 
-        <nav>
-          <button>
+        <nav className={navIsOpened? "opened" : ""}>
+          <button
+          onClick={()=>setNavIsOpened(false)}
+          >
         <img src={x} alt="close mobile menu" />
           </button>
 
-            <ul><li><a href="">Tech Stack</a></li></ul>
-            <ul><li><a href="">Projects</a></li></ul>
-            <ul><li><a href="">About Me</a></li></ul>
-            <ul><li><a href="">Contact Me</a></li></ul>
-            <ul><li><a href="">Message Me</a></li></ul>
+            <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="#stack">Tech Stack</a>
+                </li>
+                </ul>
+
+            <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="#projects">Projects</a>
+                </li>
+                </ul>
+
+            <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="#about">About Me</a>
+                </li>
+                </ul>
+
+            <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="#contact">Contact Me</a>
+                </li>
+                </ul>
+
+            <ul>
+              <li>
+                <a onClick={()=>setNavIsOpened(false)} href="">Message Me</a>
+                </li>
+                </ul>
         </nav>
 
-        <button className="menu-icons">
+        <button 
+        onClick={()=>setNavIsOpened(true)}
+        className="menu-icons">
         <img src={hamburger} alt="open mobile menu" />
         </button>
        </header>
@@ -43,11 +74,12 @@ function Hero() {
        </div>
 
        <p className="hero-intro">
-        My focus is on building web applications that users enjoy. I turn ideas into functional and visually stunning realities. Lets collaborate and create something remarkable together!
+        Mainly building with ReactJS, I focus on turning ideas into functional and visually stunning realities. Lets collaborate and create something remarkable together!
        </p>
 
        <div className="hero-ctas">
-        <button>My Projects</button>
+       <a href="#projects"> <button>My Projects</button></a>
+       
         <button>Resume</button>
        </div>
       </div>

@@ -1,0 +1,14 @@
+.loader-overlay{
+    background-image: linear-gradient(-180deg, var(--blueGradientLight), var(--blueGradientDark));
+    color:white;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-overlay p{
+    font-size: 1.6rem;
+    font-family: gotham;
+}

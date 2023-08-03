@@ -66,3 +66,22 @@
         max-width: 80%;
     }
 }
+
+/* hover effects */
+.about-me-text-content > a button:hover{
+    box-shadow: 3.5px 3.5px 0rem 0rem black;
+    transform: translate(-.2rem, -.2rem);
+    -webkit-transform: translate(-.2rem, -.2rem);
+    -moz-transform: translate(-.2rem, -.2rem);
+    -ms-transform: translate(-.2rem, -.2rem);
+    -o-transform: translate(-.2rem, -.2rem);
+}
+
+.about-me-text-content > a button:active{
+    transform: translate(.4rem, .4rem);
+    box-shadow: 1px 1px 0rem 0rem black;
+    -webkit-transform: translate(.4rem, .4rem);
+    -moz-transform: translate(.4rem, .4rem);
+    -ms-transform: translate(.4rem, .4rem);
+    -o-transform: translate(.4rem, .4rem);
+}

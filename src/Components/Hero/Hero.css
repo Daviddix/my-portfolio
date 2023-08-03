@@ -7,7 +7,16 @@ header nav{
     backdrop-filter: blur(10px);
     padding: 2rem;
     z-index: 2;
-    display: none;
+    top: -100rem;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+}
+
+header nav.opened{
+    top:0rem;
 }
 
 ul li{
@@ -25,6 +34,13 @@ li a{
     max-width: fit-content;
 }
 
+ul:last-of-type li a{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--buttonSecondaryBgColor);
+    padding: 1rem 1.5rem;
+}
+
 nav > button{
     display: block;
     max-width: 4rem;
@@ -34,8 +50,27 @@ nav > button{
 .hero{
     background-image: linear-gradient(to bottom right, var(--blueGradientLight) 5%, var(--blueGradientDark));
     height: 45rem;
+    /* position: relative; */
     overflow: hidden;
 }
+
+/* .hero::after{
+    content: "";
+position: absolute;
+background-image: 
+url("../../assets/images/background-pattern.png"),
+linear-gradient(to top right, var(--blueGradientLight) 5%, var(--blueGradientDark))
+;
+background-position: top center;
+height: 100%;
+width: 110vw;
+top: 100%;
+left: 0;
+left: calc(110vw/ -2 + 50%);
+clip-path: ellipse(50% 48% at 49.29% -15.13%);
+z-index: 2;
+
+} */
 
 .hero header{
     display: flex;
@@ -44,7 +79,7 @@ nav > button{
     width: 90vw;
     max-width: 1300px;
     margin: 0 auto 5rem;
-    padding: 1rem 0 0 ;
+    padding: 2rem 0 0 ;
 }
 
 a img[alt="website logo"]{
@@ -98,15 +133,17 @@ header button{
     width: 90vw;
     margin: auto;
     max-width: 600px;
-    margin: 3rem auto;    
+    margin: 3rem auto 4rem;    
 }
 
 .hero .hero-ctas{
     max-width: fit-content;
     margin: auto;
+    position: relative;
+    z-index: 4;
 }
 
-.hero-ctas button:first-of-type{
+.hero-ctas a button{
     background-color: var(--buttonBgPrimaryColor);
     border: 1px solid black;
     border-radius: .3rem;
@@ -119,14 +156,24 @@ header button{
     box-shadow: 3px 3px 0rem 0rem black;
     font-size: 1.6rem;
     margin: 0 2rem 0 0;
+    transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
 }
 
-.hero-ctas button:last-of-type{
+.hero-ctas > button{
     background-color: transparent;
     color: white;
     border: 1px solid var(--buttonSecondaryBgColor);
     padding: 1rem 1.5rem;
     font-size: 1.6rem;
+}
+
+.hero-ctas button a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .hero .pattern{
@@ -135,7 +182,7 @@ header button{
     bottom: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     header nav{
         display: block;
         display: flex;
@@ -166,7 +213,7 @@ header button{
     }
     
     .hero{
-        min-height: 50rem;
+        min-height: 45rem;
     }
 
     .hero .menu-icons{
@@ -176,4 +223,23 @@ header button{
     .hero-heading h1{
         font-size: 5rem;
     }
+}
+
+/* hover effects */
+.hero-ctas > a button:hover{
+    box-shadow: 3.5px 3.5px 0rem 0rem black;
+    transform: translate(-.2rem, -.2rem);
+    -webkit-transform: translate(-.2rem, -.2rem);
+    -moz-transform: translate(-.2rem, -.2rem);
+    -ms-transform: translate(-.2rem, -.2rem);
+    -o-transform: translate(-.2rem, -.2rem);
+}
+
+.hero-ctas > a button:active{
+    transform: translate(.4rem, .4rem);
+    box-shadow: 1px 1px 0rem 0rem black;
+    -webkit-transform: translate(.4rem, .4rem);
+    -moz-transform: translate(.4rem, .4rem);
+    -ms-transform: translate(.4rem, .4rem);
+    -o-transform: translate(.4rem, .4rem);
 }

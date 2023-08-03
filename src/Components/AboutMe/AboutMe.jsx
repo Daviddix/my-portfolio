@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <section className="about">
         <div className="about-me-inner">
-            <h1>ABOUT ME</h1>
+            <h1 id="about">ABOUT ME</h1>
 
             <div className="about-me-container">
                 <img src={myImage} alt="an image of Emmanuel Nsikan-David" />
@@ -19,7 +19,7 @@ function AboutMe() {
                         Beyond web development, I enjoy watching movies, playing video games and I also immerse myself in the world of music production via FL studio mobile
                     </p>
 
-                    <button>Send me a message</button>
+                    <a href="mailto:en56434@gmail.com" target="_blank"><button>Send me a message</button></a>
                 </div>
             </div>
         </div>

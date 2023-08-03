@@ -2,24 +2,29 @@ import "./SingleProject.css"
 import controlArrow from "../../assets/icons/slider-controls.svg"
 import link from "../../assets/icons/link.svg"
 import github from "../../assets/icons/github-1-icon.svg"
+import { useRef } from "react"
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-function SingleProject({name, description, stack, images}) {
+import '@splidejs/react-splide/css';
+
+function SingleProject({name, description, stack, images, links}) {
     const mappedStack = stack.map((stack)=>{
-        return <span>{stack}</span>
+        return <span key={stack}>{stack}</span>
     }) 
 
     const mappedImages = images.map((image)=>{
-        return <img src={image} alt="" />
+        return <SplideSlide><img loading="lazy" key={image} src={image} alt="" /></SplideSlide>
     })
   return (
     <div className="single-project">
         <div className="image-and-controls">
-        <div className="images-container">
+        <Splide className="images-container">
             {mappedImages}
-            </div>
+            </Splide>
                    
 
             <div className="controls">
+                
                     <button><img src={controlArrow} alt="move slider back by 1 image" /></button>
 
                     <button><img src={controlArrow} alt="move slider forward by 1 image" /></button>
@@ -39,9 +44,13 @@ function SingleProject({name, description, stack, images}) {
                 </div>
 
                 <div className="project-buttons">
-                    <button>Live Site <img src={link} /></button>
+                    <a target="_blank" href={links[0]}>
+                        <button>Live Site <img src={link} /></button>
+                        </a>
 
-                    <button>Source Code <img src={github} /></button>
+                    <a target="_blank" href={links[1]}>
+                        <button>Source Code <img src={github} /></button>
+                    </a>
                 </div>
 
         </div>

@@ -8,7 +8,7 @@ function ContactMe() {
   return (
     <section className="contact">
         <div className="contact-inner">
-            <h1>CONTACT ME</h1>
+            <h1 id="contact">CONTACT ME</h1>
 
             <div className="contact-container">
                 <div className="email">
@@ -16,8 +16,8 @@ function ContactMe() {
                         <img src={email} alt="email icon" />
                     </div>
 
-                    <a href="" className="email-link">
-                        Send me an email <img src={arrow} alt="" />
+                    <a href="mailto:en56434@gmail.com" target="_blank" className="email-link">
+                        Send me an email <img src={arrow} alt="arrow" />
                     </a>
                 </div>
 
@@ -36,7 +36,7 @@ function ContactMe() {
                         <img src={github} alt="github icon" />
                     </div>
 
-                    <a href="" className="github-link">
+                    <a target="_blank" href="https://github.com/Daviddix" className="github-link">
                         Check out my Github<img src={arrow} alt="" />
                     </a>
                 </div>

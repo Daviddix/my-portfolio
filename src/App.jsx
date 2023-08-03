@@ -4,10 +4,20 @@ import Hero from "./Components/Hero/Hero.jsx"
 import Projects from "./Components/Projects/Projects.jsx"
 import Stack from "./Components/Stack/Stack.jsx"
 import "./App.css"
+import { useEffect } from "react"
+import Loader from "./Components/Loader/Loader.jsx"
 function App() {
+  useEffect(()=>{
+    document.onreadystatechange = function(){
+      if (document.readyState == "complete") {
+        console.log("loaded")
+      }
+    }
+  }, [])
 
   return (
     <main className="App">
+    {/* <Loader /> */}
     <Hero />
     <Stack />
     <Projects />
