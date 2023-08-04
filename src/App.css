@@ -43,6 +43,8 @@
 --tablet: 600px;
 
 --laptop: 1300px;
+
+--delay : .5s;
 }
 
 *, *::before, *::after{
@@ -75,4 +77,8 @@ html{
 button{
     font-family: gothamMedium;
     cursor: pointer;
+}
+
+a{
+    -webkit-tap-highlight-color: transparent;
 }

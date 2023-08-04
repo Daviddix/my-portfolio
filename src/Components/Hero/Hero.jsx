@@ -18,7 +18,8 @@ function Hero() {
         let newScrollPosition = window.scrollY
 
       if (newScrollPosition > previousScrollPosition) {
-        headerRef.current.classList.add("inactive-scrolling")
+        headerRef.current.classList.add("inactive-scrolling") 
+        headerRef.current.classList.remove("active")
       }else if (newScrollPosition < previousScrollPosition){
         headerRef.current.classList.remove("inactive-scrolling")
         headerRef.current.classList.add("active")
@@ -105,7 +106,7 @@ function Hero() {
        <div className="hero-ctas">
        <a href="#projects"> <button>My Projects</button></a>
        
-        <button>Resume</button>
+        <a href=""><button>Resume</button></a> 
        </div>
       </div>
       

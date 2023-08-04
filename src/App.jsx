@@ -6,18 +6,22 @@ import Stack from "./Components/Stack/Stack.jsx"
 import "./App.css"
 import { useEffect } from "react"
 import Loader from "./Components/Loader/Loader.jsx"
+import { useState } from "react"
+import { useRef } from "react"
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+  const loaderRef = useRef()
   useEffect(()=>{
     document.onreadystatechange = function(){
       if (document.readyState == "complete") {
-        console.log("loaded")
+        setIsLoading(false)
       }
     }
   }, [])
 
   return (
     <main className="App">
-    {/* <Loader /> */}
+     <Loader isLoading={isLoading} />
     <Hero />
     <Stack />
     <Projects />

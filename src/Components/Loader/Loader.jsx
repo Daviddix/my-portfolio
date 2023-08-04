@@ -1,8 +1,22 @@
 import "./Loader.css"
 
-function Loader() {
+function Loader({isLoading}) {
   return (
-    <div></div>
+    <div 
+    onTransitionEnd={()=> {
+      // setTimeout(() => {
+      //   document.getAnimations().forEach((a)=> {
+      //     a.play()          
+      //   })
+      // }, 500);
+        
+    }}
+    className={isLoading? "overlay" : "overlay finished"}>
+
+      <div class="hypnotic"></div>
+
+      <p>Loading Portfolio...</p>
+    </div>
   )
 }
 

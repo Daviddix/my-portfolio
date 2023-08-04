@@ -16,8 +16,8 @@ header nav{
 }
 
 header nav.opened{
-    top:0rem;
-    left: -5vw;
+    top:0rem; 
+    left: 0vw;
 }
 
 ul li{
@@ -85,6 +85,9 @@ z-index: 2;
     position: absolute;
     top: 0;
     left: 5vw;
+    opacity: 0;
+    animation: show-header .4s ease forwards calc(var(--delay) * 10 );
+    -webkit-animation: show-header .4s ease forwards calc(var(--delay) * 10 );
 }
 
 .hero header.active{
@@ -104,10 +107,19 @@ z-index: 2;
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
 
 .hero header.inactive-scrolling{
-    opacity: 0;
+    transform: translateY(-100rem);
+    -webkit-transform: translateY(-100rem);
+    -moz-transform: translateY(-100rem);
+    -ms-transform: translateY(-100rem);
+    -o-transform: translateY(-100rem);
 }
 
 a img[alt="website logo"]{
@@ -131,6 +143,17 @@ header button{
     letter-spacing: -0.9px;
     color:white;
     margin: 0 0 1rem 0;
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
+    transform-origin: 0%;
+    opacity: 0;
+    transform:rotateX(-20deg) translateY(70px);
+    -webkit-transform:rotateX(-20deg) translateY(70px);
+    -moz-transform:rotateX(-20deg) translateY(70px);
+    -ms-transform:rotateX(-20deg) translateY(70px);
+    -o-transform:rotateX(-20deg) translateY(70px);
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
 }
 
 .hero .hero-heading{
@@ -140,6 +163,8 @@ header button{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .hero-heading h1{
@@ -149,6 +174,20 @@ header button{
     font-weight: 600;
     text-align: center;
     line-height: 1;
+    transform-origin: 0%;
+    opacity: 0;
+    transform:rotateX(-20deg) translateY(70px);
+    -webkit-transform:rotateX(-20deg) translateY(70px);
+    -moz-transform:rotateX(-20deg) translateY(70px);
+    -ms-transform:rotateX(-20deg) translateY(70px);
+    -o-transform:rotateX(-20deg) translateY(70px);
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+}
+
+.hero-heading h1:last-of-type{
+    animation-delay: calc(var(--delay) * 2 );
+    animation-duration: 1.5s;
 }
 
 .hero .hero-intro{
@@ -161,7 +200,15 @@ header button{
     width: 90vw;
     margin: auto;
     max-width: 600px;
-    margin: 3rem auto 4rem;    
+    margin: 3rem auto 4rem;
+    opacity: 0;
+    transform:rotateX(-20deg) translateY(70px);
+    -webkit-transform:rotateX(-20deg) translateY(70px);
+    -moz-transform:rotateX(-20deg) translateY(70px);
+    -ms-transform:rotateX(-20deg) translateY(70px);
+    -o-transform:rotateX(-20deg) translateY(70px);
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 3 );
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 3 );
 }
 
 .hero .hero-ctas{
@@ -189,14 +236,19 @@ header button{
     -moz-transition: all .1s ease-in;
     -ms-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
+    animation: show-button 2s infinite ease;
+    -webkit-animation: show-button 1s forwards ease calc(var(--delay) * 8.5 );
+    opacity: 0;
 }
 
-.hero-ctas > button{
+.hero-ctas a:last-of-type button{
     background-color: transparent;
     color: white;
     border: 1px solid var(--buttonSecondaryBgColor);
     padding: 1rem 1.5rem;
     font-size: 1.6rem;
+    box-shadow: none;
+    animation-delay: calc(var(--delay) * 9 );
 }
 
 .hero-ctas button a{
@@ -254,7 +306,7 @@ header button{
 }
 
 /* hover effects */
-.hero-ctas > a button:hover{
+.hero-ctas > a:first-of-type button:hover{
     box-shadow: 3.5px 3.5px 0rem 0rem black;
     transform: translate(-.2rem, -.2rem);
     -webkit-transform: translate(-.2rem, -.2rem);
@@ -263,11 +315,34 @@ header button{
     -o-transform: translate(-.2rem, -.2rem);
 }
 
-.hero-ctas > a button:active{
+.hero-ctas > a:first-of-type button:active{
     transform: translate(.4rem, .4rem);
     box-shadow: 1px 1px 0rem 0rem black;
     -webkit-transform: translate(.4rem, .4rem);
     -moz-transform: translate(.4rem, .4rem);
     -ms-transform: translate(.4rem, .4rem);
     -o-transform: translate(.4rem, .4rem);
+}
+
+@keyframes show {
+    to {
+    opacity: 1;
+    transform:rotateX(0deg) translateY(0px);
+    -webkit-transform:rotateX(0deg) translateY(0px);
+    -moz-transform:rotateX(0deg) translateY(0px);
+    -ms-transform:rotateX(0deg) translateY(0px);
+    -o-transform:rotateX(0deg) translateY(0px);
+}
+}
+
+@keyframes show-button {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes show-header {
+    to{
+        opacity: 1;
+    }
 }
