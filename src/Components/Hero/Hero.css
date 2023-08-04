@@ -110,7 +110,7 @@ z-index: 2;
     opacity: 1;
     position: fixed;
     top: 0;
-    left: 0%;
+    left: 0rem;
     transition: .5s ease;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
@@ -124,6 +124,7 @@ z-index: 2;
     -moz-transform: translateY(-100rem) translateX(0);
     -ms-transform: translateY(-100rem) translateX(0);
     -o-transform: translateY(-100rem) translateX(0);
+    left: 0;
 }
 
 a img[alt="website logo"]{
