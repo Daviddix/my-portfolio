@@ -11,7 +11,10 @@ import { useRef } from "react"
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   useEffect(()=>{
+
+
     document.onreadystatechange = function(){
+      console.log("first time?");
       if (document.readyState == "complete") { 
         setIsLoading(false)
       }
@@ -19,7 +22,8 @@ function App() {
   }, [])
 
   return (
-    <main className="App">
+    <main 
+    className="App">
      <Loader isLoading={isLoading} />
     <Hero />
     <Stack />

@@ -50,10 +50,18 @@ nav > button{
 
 .hero{
     background-image: linear-gradient(to bottom right, var(--blueGradientLight) 5%, var(--blueGradientDark));
-    height: 45rem;
-    /* position: relative; */
-    overflow: hidden;
+    height: 100vh;
+    /*position: relative;
+    */overflow: hidden;
     padding: 9rem 0 0;
+    animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    -webkit-animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+}
+
+@keyframes shrink {
+    to{
+        height: 45rem;
+    }
 }
 
 /* .hero::after{
@@ -102,12 +110,7 @@ z-index: 2;
     opacity: 1;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    left: 0%;
     transition: .5s ease;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
@@ -116,11 +119,11 @@ z-index: 2;
 }
 
 .hero header.inactive-scrolling{
-    transform: translateY(-100rem);
-    -webkit-transform: translateY(-100rem);
-    -moz-transform: translateY(-100rem);
-    -ms-transform: translateY(-100rem);
-    -o-transform: translateY(-100rem);
+    transform: translateY(-100rem) translateX(0);
+    -webkit-transform: translateY(-100rem) translateX(0);
+    -moz-transform: translateY(-100rem) translateX(0);
+    -ms-transform: translateY(-100rem) translateX(0);
+    -o-transform: translateY(-100rem) translateX(0);
 }
 
 a img[alt="website logo"]{
@@ -274,6 +277,7 @@ header button{
         position: static;
         width: 100vw;
         background-color: transparent;
+        backdrop-filter: none;
         padding: 0rem;
     }
 
