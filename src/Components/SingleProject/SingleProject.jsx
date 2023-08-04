@@ -13,7 +13,7 @@ function SingleProject({name, description, stack, images, links}) {
     }) 
 
     const mappedImages = images.map((image)=>{
-        return <SplideSlide><img loading="lazy" key={image} src={image} alt="" /></SplideSlide>
+        return <SplideSlide key={image}><img loading="lazy" key={image} src={image} alt="" /></SplideSlide>
     })
   return (
     <div className="single-project">

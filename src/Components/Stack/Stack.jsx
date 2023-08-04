@@ -12,7 +12,7 @@ function Stack() {
     const [stack, setStack] = useState([{name : "HTML", icon : html}, {name : "CSS", icon : css}, {name : "JavaScript", icon : js}, {name: "Tailwind CSS", icon : tailwind}, {name : "ReactJS", icon : react}, {name: "Invision Studio", icon : invision}])
 
     const mappedStack = stack.map(({icon, name}) => {
-        return <SingleStack icon={icon} name ={name} />
+        return <SingleStack key={name} icon={icon} name ={name} />
     })
   return (
     <section className="stack">

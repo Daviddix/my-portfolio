@@ -86,8 +86,9 @@ z-index: 2;
     top: 0;
     left: 5vw;
     opacity: 0;
-    animation: show-header .4s ease forwards calc(var(--delay) * 10 );
-    -webkit-animation: show-header .4s ease forwards calc(var(--delay) * 10 );
+    animation: show-header .4s ease forwards calc(var(--delay) * 5.5 );
+    -webkit-animation: show-header .4s ease forwards calc(var(--delay) * 5.5 );
+    z-index: 8;
 }
 
 .hero header.active{
@@ -143,8 +144,6 @@ header button{
     letter-spacing: -0.9px;
     color:white;
     margin: 0 0 1rem 0;
-    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
-    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
     transform-origin: 0%;
     opacity: 0;
     transform:rotateX(-20deg) translateY(70px);
@@ -152,8 +151,8 @@ header button{
     -moz-transform:rotateX(-20deg) translateY(70px);
     -ms-transform:rotateX(-20deg) translateY(70px);
     -o-transform:rotateX(-20deg) translateY(70px);
-    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
-    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1);
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1);
 }
 
 .hero .hero-heading{
@@ -164,7 +163,10 @@ header button{
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+}
 
+.hero-heading h1:first-of-type{
+    padding-top: .5rem;
 }
 
 .hero-heading h1{
@@ -181,13 +183,13 @@ header button{
     -moz-transform:rotateX(-20deg) translateY(70px);
     -ms-transform:rotateX(-20deg) translateY(70px);
     -o-transform:rotateX(-20deg) translateY(70px);
-    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
-    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
+    -webkit-animation: show 2s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 1.5);
 }
 
 .hero-heading h1:last-of-type{
     animation-delay: calc(var(--delay) * 2 );
-    animation-duration: 1.5s;
+    animation-duration: 2;
 }
 
 .hero .hero-intro{
@@ -237,7 +239,7 @@ header button{
     -ms-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
     animation: show-button 2s infinite ease;
-    -webkit-animation: show-button 1s forwards ease calc(var(--delay) * 8.5 );
+    -webkit-animation: show-button 1s forwards ease calc(var(--delay) * 4 );
     opacity: 0;
 }
 
@@ -248,7 +250,7 @@ header button{
     padding: 1rem 1.5rem;
     font-size: 1.6rem;
     box-shadow: none;
-    animation-delay: calc(var(--delay) * 9 );
+    animation-delay: calc(var(--delay) * 4.5 );
 }
 
 .hero-ctas button a{

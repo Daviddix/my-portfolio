@@ -57,7 +57,7 @@ function Projects() {
   }])
 
   const mappedProjects = projects.map(({name, description, stack, images, links})=>{
-    return <SingleProject name={name} description={description} stack={stack} images={images} links={links} />
+    return <SingleProject key={name} name={name} description={description} stack={stack} images={images} links={links} />
   })
   return (
     <section className="projects">

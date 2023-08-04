@@ -10,10 +10,9 @@ import { useState } from "react"
 import { useRef } from "react"
 function App() {
   const [isLoading, setIsLoading] = useState(true)
-  const loaderRef = useRef()
   useEffect(()=>{
     document.onreadystatechange = function(){
-      if (document.readyState == "complete") {
+      if (document.readyState == "complete") { 
         setIsLoading(false)
       }
     }

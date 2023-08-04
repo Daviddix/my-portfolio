@@ -4,16 +4,12 @@ function Loader({isLoading}) {
   return (
     <div 
     onTransitionEnd={()=> {
-      // setTimeout(() => {
-      //   document.getAnimations().forEach((a)=> {
-      //     a.play()          
-      //   })
-      // }, 500);
+      document.body.style.overflowY = "scroll"
         
     }}
     className={isLoading? "overlay" : "overlay finished"}>
 
-      <div class="hypnotic"></div>
+      <div className="hypnotic"></div>
 
       <p>Loading Portfolio...</p>
     </div>

@@ -8,11 +8,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: .4s linear;
-    -webkit-transition: .4s linear;
-    -moz-transition: .4s linear;
-    -ms-transition: .4s linear;
-    -o-transition: .4s linear;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
 }
 
 .overlay.finished{
