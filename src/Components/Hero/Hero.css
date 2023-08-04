@@ -51,36 +51,11 @@ nav > button{
 .hero{
     background-image: linear-gradient(to bottom right, var(--blueGradientLight) 5%, var(--blueGradientDark));
     height: 100vh;
-    /*position: relative;
-    */overflow: hidden;
+    overflow: hidden;
     padding: 9rem 0 0;
     animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
     -webkit-animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
 }
-
-@keyframes shrink {
-    to{
-        height: 45rem;
-    }
-}
-
-/* .hero::after{
-    content: "";
-position: absolute;
-background-image: 
-url("../../assets/images/background-pattern.png"),
-linear-gradient(to top right, var(--blueGradientLight) 5%, var(--blueGradientDark))
-;
-background-position: top center;
-height: 100%;
-width: 110vw;
-top: 100%;
-left: 0;
-left: calc(110vw/ -2 + 50%);
-clip-path: ellipse(50% 48% at 49.29% -15.13%);
-z-index: 2;
-
-} */
 
 .hero header{
     display: flex;
@@ -243,7 +218,7 @@ header button{
     -ms-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
     animation: show-button 2s infinite ease;
-    -webkit-animation: show-button 1s forwards ease calc(var(--delay) * 4 );
+    -webkit-animation: show-button 1s forwards ease calc(var(--delay) * 5 );
     opacity: 0;
 }
 
@@ -254,7 +229,7 @@ header button{
     padding: 1rem 1.5rem;
     font-size: 1.6rem;
     box-shadow: none;
-    animation-delay: calc(var(--delay) * 4.5 );
+    animation-delay: calc(var(--delay) * 5.5 );
 }
 
 .hero-ctas button a{
@@ -266,6 +241,9 @@ header button{
     max-width: 100%;
     position: relative;
     bottom: 0;
+    opacity: 0;
+    animation: show-pattern 1s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 6 );
+    -webkit-animation: show-pattern 1s cubic-bezier(.68,-0.55,.27,1.55) forwards calc(var(--delay) * 6 );
 }
 
 @media screen and (min-width: 800px) {
@@ -349,6 +327,18 @@ header button{
 }
 
 @keyframes show-header {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes shrink {
+    to{
+        height: 40rem;
+    }
+}
+
+@keyframes show-pattern {
     to{
         opacity: 1;
     }
