@@ -3,15 +3,40 @@ import x from "../../assets/icons/x-icon.svg"
 import hamburger from "../../assets/icons/hamburger-icon.svg"
 import pattern from "../../assets/images/background-pattern.png"
 import "./Hero.css"
-import { useState } from "react"
+import { useEffect, useState,useRef } from "react"
 
 
 function Hero() {
   const [navIsOpened, setNavIsOpened] = useState(false)
+  const headerRef = useRef()
+
+  useEffect(()=>{
+    let previousScrollPosition = window.scrollY
+
+    document.addEventListener("scroll", ()=>{
+      if (window.scrollY > 10) {
+        let newScrollPosition = window.scrollY
+
+      if (newScrollPosition > previousScrollPosition) {
+        headerRef.current.classList.add("inactive-scrolling")
+      }else if (newScrollPosition < previousScrollPosition){
+        headerRef.current.classList.remove("inactive-scrolling")
+        headerRef.current.classList.add("active")
+      }
+
+      previousScrollPosition = newScrollPosition
+      }else{
+        headerRef.current.classList.remove("inactive-scrolling")
+        headerRef.current.classList.remove("active")
+      }
+      
+    })
+  }, [])
+
   return (
     <section className="hero">
 
-      <header>
+      <header ref={headerRef}>
         <a href="#" className="logo">
             <img src={logo} alt="website logo" />
         </a>

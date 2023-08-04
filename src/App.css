@@ -54,7 +54,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
+    scroll-padding-top: 10rem;
 }
 
 @font-face {
