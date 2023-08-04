@@ -1,4 +1,4 @@
-import logo from "../../assets/icons/ND.svg"
+import logo from "../../assets/images/ND.png"
 import x from "../../assets/icons/x-icon.svg"
 import hamburger from "../../assets/icons/hamburger-icon.svg"
 import pattern from "../../assets/images/background-pattern.png"
