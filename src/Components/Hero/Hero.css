@@ -50,11 +50,11 @@ nav > button{
 
 .hero{
     background-image: linear-gradient(to bottom right, var(--blueGradientLight) 5%, var(--blueGradientDark));
-    height: 100vh;
+    height: 45rem;
     overflow: hidden;
     padding: 9rem 0 0;
-    animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
-    -webkit-animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    /* animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay);
+    -webkit-animation: shrink 3s cubic-bezier(.68,-0.55,.27,1.55) forwards var(--delay); */
 }
 
 .hero header{

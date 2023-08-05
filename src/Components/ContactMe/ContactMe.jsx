@@ -26,8 +26,8 @@ function ContactMe() {
                         <img src={twitter} alt="twitter icon" />
                     </div>
 
-                    <a href="" className="twitter-link">
-                        Message me on Twitter <img src={arrow} alt="" />
+                    <a href="https://www.twitter.com/dixx_david" target="_blank" className="twitter-link">
+                        Message me on Twitter <img src={arrow} alt="arrow icon" />
                     </a>
                 </div>
 
@@ -37,7 +37,7 @@ function ContactMe() {
                     </div>
 
                     <a target="_blank" href="https://github.com/Daviddix" className="github-link">
-                        Check out my Github<img src={arrow} alt="" />
+                        Check out my Github<img src={arrow} alt="arrow icon" />
                     </a>
                 </div>
             </div>

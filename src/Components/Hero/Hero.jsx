@@ -75,7 +75,7 @@ function Hero() {
 
             <ul>
               <li>
-                <a onClick={()=>setNavIsOpened(false)} href="mailto:en56434@gmail.com" target="_blank">Message Me</a>
+                <a onClick={()=>setNavIsOpened(false)} href="https://github.com/Daviddix" target="_blank">My Github</a>
                 </li>
                 </ul>
         </nav>
