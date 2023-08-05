@@ -38,7 +38,7 @@ function Hero() {
     <section className="hero">
 
       <header ref={headerRef}>
-        <a href="#" className="logo">
+        <a href="/" className="logo">
             <img src={logo} alt="website logo" />
         </a>
 

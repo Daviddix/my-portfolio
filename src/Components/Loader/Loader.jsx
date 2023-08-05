@@ -3,11 +3,11 @@ import "./Loader.css"
 function Loader({isLoading}) {
   return (
     <div 
-    onTransitionEnd={()=> {
+    onAnimationEnd={()=> {
       document.body.style.overflowY = "scroll"
         
     }}
-    className={isLoading? "overlay" : "overlay finished"}>
+    className={"overlay finished"}>
 
       <div className="hypnotic"></div>
 

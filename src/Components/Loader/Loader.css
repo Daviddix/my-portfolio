@@ -4,24 +4,24 @@
     min-width: 100%;
     min-height: 100vh;
     z-index: 17;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: .3s linear;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
+    animation: slider-loader .8s ease .5s forwards;
+    -webkit-animation: slider-loader .8s ease .5s forwards;
 }
 
-.overlay.finished{
-    transform: translateY(-100%);
+@keyframes slider-loader {
+   to{
+      transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
 }
+   }
+
 
 .hypnotic {
     width: 56px;
