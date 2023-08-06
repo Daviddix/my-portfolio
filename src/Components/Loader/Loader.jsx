@@ -1,6 +1,6 @@
 import "./Loader.css"
 
-function Loader({isLoading}) {
+function Loader() {
   return (
     <div 
     onAnimationEnd={()=> {
