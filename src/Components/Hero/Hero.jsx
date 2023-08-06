@@ -2,6 +2,7 @@ import logo from "../../assets/images/ND.png"
 import x from "../../assets/icons/x-icon.svg"
 import hamburger from "../../assets/icons/hamburger-icon.svg"
 import pattern from "../../assets/images/background-pattern.png"
+import resume from "../../assets/resume.pdf"
 import "./Hero.css"
 import { useEffect, useState,useRef } from "react"
 
@@ -106,7 +107,7 @@ function Hero() {
        <div className="hero-ctas">
        <a href="#projects"> <button>My Projects</button></a>
        
-        <a href=""><button>Resume</button></a> 
+        <a download href={resume}><button>Resume</button></a> 
        </div>
       </div>
       

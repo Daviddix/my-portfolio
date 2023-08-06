@@ -16,7 +16,7 @@ function ContactMe() {
                         <img src={email} alt="email icon" />
                     </div>
 
-                    <a href="mailto:en56434@gmail.com" target="_blank" className="email-link">
+                    <a title="en56434@gmail.com" href="mailto:en56434@gmail.com" target="_blank" className="email-link">
                         Send me an email <img src={arrow} alt="arrow" />
                     </a>
                 </div>
