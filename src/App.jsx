@@ -24,8 +24,8 @@ function App() {
 
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="nsikandavid.netlify.app" />
-      <meta property="twitter:url" content="https://nsikandavid.netlify.app" />
+      <meta property="twitter:domain" content="nsikandavid.dev" />
+      <meta property="twitter:url" content="https://nsikandavid.dev" />
       <meta name="twitter:title" content="Nsikan-David | Frontend Web Developer" />
       <meta name="twitter:description" content="Emmanuel Nsikan-david | Frontend Web Developer & UI Designer " />
       <meta name="twitter:image" content={og} />
